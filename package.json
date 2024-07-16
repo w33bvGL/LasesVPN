@@ -1,0 +1,22 @@
+{
+  "name": "lasesvpn",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "directories": {
+    "doc": "doc"
+  },
+  "scripts": {
+    "less": "chokidar \"src/less/**/*.less\" -c \"lessc src/less/main.less src/css/main.css --clean-css\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "chokidar-cli": "^3.0.0",
+    "less-plugin-clean-css": "^1.6.0"
+  },
+  "dependencies": {
+    "less": "^4.2.0"
+  }
+}
