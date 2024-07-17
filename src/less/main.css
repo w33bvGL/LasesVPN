@@ -2,26 +2,26 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-
-  &::after , &::before {
-    padding: 0;
-    margin: 0;
-  }
 }
-
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
 body {
   background-color: var(--color-primary);
   min-height: 100dvh;
   font-size: 16px;
 }
-
 .container {
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
   padding: 0 10px;
 }
-
 .button-1 {
   color: red;
+}
+:root {
+  --font-size: 20px;
 }
