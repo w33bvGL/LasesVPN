@@ -15,9 +15,15 @@
       gap: 30px;
 
       a {
+        height: 100%;
         color: #4F5665;
         text-decoration: none;
         font-family: 'Rubik-regular', sans-serif;
+        transition: color 0.2s ease-in-out;
+
+        &:hover {
+          color: #F53855;
+        }
       }
     }
 
@@ -49,6 +55,18 @@
   background-color: white;
   overflow-x: hidden;
   transition: 0.2s;
+  padding-top: 50px;
+
+  .top-banner {
+    position: relative;
+
+    .closebtn {
+      margin-right: 10px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+  }
 
   .overlay-content {
     position: relative;
@@ -60,21 +78,15 @@
     a {
       padding: 8px;
       text-decoration: none;
-      font-size: 36px;
+      font-size: 30px;
       color: #4F5665;
       display: block;
       font-family: 'Rubik-Regular', sans-serif;
       transition: color 0.2s ease-in-out;
-    }
-  }
 
-  .closebtn {
-    position: absolute;
-    text-decoration: none;
-    font-size: 36px;
-    top: 20px;
-    color: black;
-    right: 45px;
-    font-size: 60px;
+      &:hover {
+        color: #F53855;
+      }
+    }
   }
 }
