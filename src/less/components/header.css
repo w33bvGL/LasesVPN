@@ -1,0 +1,67 @@
+.header .container-inner {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .container-inner .header-buttons {
+  display: flex;
+  gap: 30px;
+}
+.header .container-inner .header-navigation {
+  display: flex;
+  gap: 30px;
+}
+.header .container-inner .header-navigation a {
+  color: #4F5665;
+  text-decoration: none;
+  font-family: 'Rubik-regular', sans-serif;
+}
+.header .container-inner .burger {
+  display: none;
+}
+@media (max-width: 950px) {
+  .header .container-inner .header-navigation,
+  .header .container-inner .header-buttons {
+    display: none;
+  }
+  .header .container-inner .burger {
+    display: block;
+  }
+}
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.2s;
+}
+.overlay .overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+.overlay .overlay-content a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #4F5665;
+  display: block;
+  font-family: 'Rubik-Regular', sans-serif;
+  transition: color 0.2s ease-in-out;
+}
+.overlay .closebtn {
+  position: absolute;
+  text-decoration: none;
+  font-size: 36px;
+  top: 20px;
+  color: black;
+  right: 45px;
+  font-size: 60px;
+}

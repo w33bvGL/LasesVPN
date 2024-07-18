@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'Rubik-regular';
+  src: url(../../font/static/Rubik-Regular.ttf);
+}
+@font-face {
+  font-family: 'Rubik-Bold';
+  src: url(../../font/static/Rubik-Bold.ttf);
+}
 * {
   padding: 0;
   margin: 0;
@@ -9,7 +17,6 @@
   margin: 0;
 }
 body {
-  background-color: var(--color-primary);
   min-height: 100dvh;
   font-size: 16px;
 }
@@ -19,6 +26,34 @@ body {
   margin: 0 auto;
   padding: 0 10px;
 }
+.button {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.button-l {
+  padding: 13px 45px;
+}
 .button-1 {
-  color: red;
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  padding: 13px 45px;
+  color: #F53855;
+  font-family: 'Rubik-Bold', sans-serif;
+  border: 2px solid #F53855;
+  border-radius: 50px;
+}
+.button-2 {
+  font-size: 16px;
+  outline: none;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #0B132A;
+  font-family: 'Rubik-Bold', sans-serif;
 }

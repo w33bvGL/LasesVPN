@@ -11,13 +11,49 @@
   </head>
   <body>
     <!-- ### HEADER ### -->
-     <header class="header">
-      <div class="continaer">
+    <header class="header" id="header">
+      <div class="container">
         <div class="container-inner">
-          
+          <div class="header-logo" onclick="window.loctaion.href='/'">
+            <img src="/img/Logo.png" alt="lasles vpn logo" />
+          </div>
+          <nav class="header-navigation">
+            <a href="#header">About</a>
+            <a href="#features">Features</a>
+            <a href="#pricing">Pricing</a>
+            <a href="#testimonials">Testimonials</a>
+            <a href="#help">Help</a>
+          </nav>
+          <div class="header-buttons">
+            <button class="button-2">Sign In</button>
+            <button class="button-1">Sign Up</button>
+          </div>
+          <div class="burger">
+            <a href="javascript:void(0)" onclick="openNav()">
+              <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M3 7H21" stroke="#0B132A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M3 12H21" stroke="#0B132A" stroke-width="1.5" stroke-linecap="round"/>
+                <path d="M3 17H21" stroke="#0B132A" stroke-width="1.5" stroke-linecap="round"/>
+                </svg> 
+              </a>
+          </div>
         </div>
       </div>
-     </header>
+    </header>
+
+    <div id="myNav" class="overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"
+        >&times;</a
+      >
+
+      <div class="overlay-content">
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+    </div>
     <!-- ### HEADER ### -->
+    <script src="src/js/menu.js"></script>
   </body>
 </html>
